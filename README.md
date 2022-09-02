@@ -14,14 +14,14 @@ docker build --t landingpage-tedi:node .
 ## Run Locally
 
 ```
-docker run --rm -p 9090:8080 -e PORT=8080 helloworld:node
+docker run --rm -p 9090:8080 -e PORT=8080 landingpage-tedi:node
 ```
 
 ## Test
 
 ```
-export SERVICE_NAME=helloworld
-export CONTAINER_IMAGE=gcr.io/${GOOGLE_CLOUD_PROJECT}/helloworld
+export SERVICE_NAME=landingpage-tedi
+export CONTAINER_IMAGE=gcr.io/${GOOGLE_CLOUD_PROJECT}/landingpage-tedi
 npm run e2e-test
 ```
 
@@ -35,6 +35,6 @@ export GOOGLE_CLOUD_PROJECT=<PROJECT_ID>
 gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/landingpage-tedi
 
 # Deploy to Cloud Run
-gcloud run deploy helloworld \
+gcloud run deploy landingpage-tedi \
 --image gcr.io/${GOOGLE_CLOUD_PROJECT}/landingpage-tedi
 ```
