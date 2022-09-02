@@ -14,4 +14,4 @@ RUN npm install --only=production
 COPY . .
 
 # Run the web service on container
-RUN ["node", "server.js"]
+CMD node server.js
