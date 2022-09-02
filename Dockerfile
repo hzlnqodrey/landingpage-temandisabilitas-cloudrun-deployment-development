@@ -13,3 +13,5 @@ RUN npm install --only=production
 # Copy local code to the container image.
 COPY . .
 
+# Run the web service on container
+RUN ["node", "server.js"]
