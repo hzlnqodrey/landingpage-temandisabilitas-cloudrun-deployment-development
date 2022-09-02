@@ -33,3 +33,13 @@ gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/landingpage-tedi
 gcloud run deploy landingpage-tedi \
 --image gcr.io/${GOOGLE_CLOUD_PROJECT}/landingpage-tedi
 ```
+
+## Pull by Tag
+```sh
+docker pull gcr.io/tedi-backend-web/landingpage-tedi:v1
+```
+
+## Pull by Digest
+```sh
+docker pull gcr.io/tedi-backend-web/landingpage-tedi@sha256:2296bb4b07f6ccfdee03ea2f4a216c12b09066ec370ddb42c4ebda25a2269bc2
+```
