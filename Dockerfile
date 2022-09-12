@@ -10,6 +10,9 @@ COPY package*.json ./
 # Prevent to download package.json devDependencies, use --only=production
 RUN npm install --only=production
 
+# Build ReactJS components
+RUN npm run build
+
 # Copy local code to the container image.
 COPY . .
 
