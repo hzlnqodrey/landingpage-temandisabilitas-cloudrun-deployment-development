@@ -13,8 +13,5 @@ RUN npm install --only=production
 # Copy local code to the container image.
 COPY . .
 
-# Build Reacts JS Components
-RUN npm run build
-
 # Run the web service on container
 CMD node server.js
