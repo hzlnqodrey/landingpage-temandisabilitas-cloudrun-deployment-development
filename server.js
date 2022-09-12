@@ -16,7 +16,7 @@ app.use('/api', apiRouter)
 
 app.use('/', (req, res) => {
   res.status(404)
-  res.send('404 File Not Found')
+  res.send('404 File Not Found | Back to <a href="/">Homepage</a>')
 })
 
 app.listen(port, () => {
